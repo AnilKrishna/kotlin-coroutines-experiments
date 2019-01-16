@@ -1,4 +1,4 @@
-# GrandMastAR
+# City Weather
 
 An Android app to experiment and understand Kotlin Coroutines. 
 
