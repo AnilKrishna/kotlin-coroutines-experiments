@@ -25,7 +25,6 @@ repositories {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     api Deps.androidxAppcompat
     api Deps.androidxConstraint
     application project(':app')
