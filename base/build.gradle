@@ -1,25 +1,33 @@
 apply plugin: 'com.android.feature'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion Vers.androidCompileSdk
     baseFeature true
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 28
+        minSdkVersion Vers.androidMinSdk
+        targetSdkVersion Vers.androidTargetSdk
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner Vers.androidTestRunnerClass
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
-    api 'com.android.support:appcompat-v7:28.0.0'
-    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api Deps.androidxAppcompat
+    api Deps.androidxConstraint
     application project(':app')
     feature project(':feature')
 }

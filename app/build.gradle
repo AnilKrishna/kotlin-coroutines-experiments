@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.android.base'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
@@ -28,21 +29,7 @@ repositories {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':feature')
     implementation project(':base')
-
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation Deps.kotlinStdlib7
-    implementation Deps.kotlinxCoroutinesCore
-    implementation Deps.kotlinxCoroutinesAndroid
-    implementation Deps.androidxAppcompat
-    implementation Deps.androidMaterial
-    implementation Deps.androidxRecyclerview
-    implementation Deps.androidxCardview
-    implementation Deps.androidxConstraint
-    implementation Deps.androidxLifecycleExtensions
-    implementation Deps.retrofit
-    implementation Deps.retrofitMoshi
-    implementation Deps.okhttpLogging
-    testImplementation Deps.junit
 }

@@ -5,22 +5,29 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion Vers.androidCompileSdk
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 28
+        minSdkVersion Vers.androidMinSdk
+        targetSdkVersion Vers.androidTargetSdk
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner Vers.androidTestRunnerClass
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation project(':base')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    
+    implementation Deps.kotlinStdlib7
+    implementation Deps.kotlinxCoroutinesCore
+    implementation Deps.kotlinxCoroutinesAndroid
+    implementation Deps.androidxAppcompat
+    implementation Deps.androidMaterial
+    implementation Deps.androidxRecyclerview
+    implementation Deps.androidxCardview
+    implementation Deps.androidxConstraint
+    implementation Deps.androidxLifecycleExtensions
+    implementation Deps.retrofit
+    implementation Deps.retrofitMoshi
+    implementation Deps.okhttpLogging
+    testImplementation Deps.junit
 }
