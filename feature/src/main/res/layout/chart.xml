@@ -11,6 +11,6 @@
     <com.coroutines.cityweather.feature.ChartView
         android:id="@+id/chart"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/chart_height_small" />
+        android:layout_height="@dimen/chart_height_big" />
 
 </androidx.cardview.widget.CardView>

@@ -4,31 +4,31 @@
     <group android:checkableBehavior="single">
         <item
             android:icon="@drawable/ic_location"
-            android:title="Wroclaw"/>
+            android:title="Sydney"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="Warsaw"/>
+            android:title="Melbourne"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="Paris"/>
+            android:title="Brisbane"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="London"/>
+            android:title="Perth"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="New York"/>
+            android:title="Adelaide"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="Concord"/>
+            android:title="Gold Coast"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="Vatican"/>
+            android:title="Newcastle"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="Sosnowiec"/>
+            android:title="Canberra"/>
         <item
             android:icon="@drawable/ic_location"
-            android:title="Alta"/>
+            android:title="Hobart"/>
         <item
             android:icon="@drawable/ic_location"
             android:title="Bad City, xxx"/>

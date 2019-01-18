@@ -18,7 +18,7 @@ val Float.asMeasurementString get() = "%.0f".format(this)
 val List<DailyForecast>.tempChart: Chart
     get() {
 
-    require(size > 1) { "Can not create a chart with less then two measurements" } // maybe: return some chart for just one measurement?
+    require(size > 1) { "Can not create a chart with less than two measurements" } // maybe: return some chart for just one measurement?
 
     return Chart(
         inputRange = first().dt.toFloat()..last().dt.toFloat(),
@@ -37,7 +37,7 @@ val List<DailyForecast>.tempChart: Chart
  */
 val List<DailyForecast>.humidityAndCloudinessChart: Chart get() {
 
-    require(size > 1) { "Can not create a chart with less then two measurements" } // maybe: return some chart for just one measurement?
+    require(size > 1) { "Can not create a chart with less than two measurements" } // maybe: return some chart for just one measurement?
 
     return Chart(
         inputRange = first().dt.toFloat()..last().dt.toFloat(),
@@ -54,7 +54,7 @@ val List<DailyForecast>.humidityAndCloudinessChart: Chart get() {
  */
 val List<DailyForecast>.windSpeedChart: Chart get() {
 
-    require(size > 1) { "Can not create a chart with less then two measurements" } // maybe: return some chart for just one measurement?
+    require(size > 1) { "Can not create a chart with less than two measurements" } // maybe: return some chart for just one measurement?
 
     return Chart(
         inputRange = first().dt.toFloat()..last().dt.toFloat(),
@@ -70,7 +70,7 @@ val List<DailyForecast>.windSpeedChart: Chart get() {
  */
 val List<DailyForecast>.pressureChart: Chart get() {
 
-    require(size > 1) { "Can not create a chart with less then two measurements" } // maybe: return some chart for just one measurement?
+    require(size > 1) { "Can not create a chart with less than two measurements" } // maybe: return some chart for just one measurement?
 
     return Chart(
         inputRange = first().dt.toFloat()..last().dt.toFloat(),
@@ -86,7 +86,7 @@ val List<DailyForecast>.pressureChart: Chart get() {
  */
 val List<DailyForecast>.rainAndSnowChart: Chart get() {
 
-    require(size > 1) { "Can not create a chart with less then two measurements" } // maybe: return some chart for just one measurement?
+    require(size > 1) { "Can not create a chart with less than two measurements" } // maybe: return some chart for just one measurement?
 
     return Chart(
         inputRange = first().dt.toFloat()..last().dt.toFloat(),

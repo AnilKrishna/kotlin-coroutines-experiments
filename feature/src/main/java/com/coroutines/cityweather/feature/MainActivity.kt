@@ -1,10 +1,12 @@
 package com.coroutines.cityweather.feature
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -40,8 +42,10 @@ class MainActivity : AppCompatActivity() {
             toggle.syncState()
         }
         navigation.setNavigationItemSelectedListener {
+            drawer.closeDrawer(GravityCompat.START)
             model.action(SelectCity(it.title.toString()))
         }
+
         recycler.adapter = adapter
         initModel()
     }

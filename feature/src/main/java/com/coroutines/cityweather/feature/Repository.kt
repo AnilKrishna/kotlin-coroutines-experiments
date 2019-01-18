@@ -5,8 +5,8 @@ object Repository {
 
     /**
      * API key generated from https://openweathermap.org/
-     * f08f5bce8d0fe0c0903f145a88d773f8 - working
-     * 7d5f1eb65a69dc70eb88897e111c8d5f - time gap
+     * f08f5bce8d0fe0c0903f145a88d773f8 - working - 16days weather
+     * 7d5f1eb65a69dc70eb88897e111c8d5f - free api test - 5 days
      * 04520cbaa7b7548673e29e5f8225e843
      */
     internal val appid = "f08f5bce8d0fe0c0903f145a88d773f8"

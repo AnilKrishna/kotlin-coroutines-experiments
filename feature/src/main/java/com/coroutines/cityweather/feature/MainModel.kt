@@ -39,7 +39,7 @@ class MainModel : ViewModel() {
         }
     }
 
-    init { action(SelectCity("Warsaw")) }
+    init { action(SelectCity("Sydney")) }
 
     fun action(action: Action) = actor.offer(action)
 
